@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Set;
 
 public class HashMapFun {
-    //add songs to the map with K, V as title, lyrcis
+    //add songs to the map with K, V as title, lyrics
     public static String addASong(HashMap<String, String> hashMap, String title, String lyrics) {
         //check if key exists first --only add if false
         if (hashMap.containsKey(title)) {
@@ -21,7 +21,7 @@ public class HashMapFun {
         }
         return "Song not found";
     }
-    //print all songs as Title: Lyrics
+    //print all songs as title: lyrics
     public static void showAllSongs(HashMap<String, String> hashMap) {
         //use keySet to set the keys into a Set obj
         Set<String> titles = hashMap.keySet();
